@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <form action="submit" method="post">
+        <fieldset>
+            <legend>User's registration</legend>
+
+            <label for="user-name">Name</label>
+            <input placeholder="name" name="name" id="user-name" required type="text">
+
+            <label for="user-lastname">Last name</label>
+            <input placeholder="last name" name="last-name" id="user-lastname" required type="text">
+
+            <label for="user-email">Email</label>
+            <input placeholder="email@example.com" name="email" id="user-email" required type="email">
+
+            <label for="user-address">Address</label>
+            <input placeholder="address" name="address" id="user-address" type="text">
+
+            <label for="user-city">City</label>
+            <input placeholder="city" name="city" id="user-city" type="text">
+
+            <label for="user-country">Country</label>
+            <input placeholder="country" name="country" id="user-country" required type="text">
+
+            <label for="user-phoneNumber">Phone number</label>
+            <input placeholder="phone number" name="phone" id="user-phoneNumber" type="number">
+
+            <label for="user-description">Add a description of yourself</label>
+            <textarea name="description" id="user-description" placeholder="300 characters maximum"
+                maxlength="300"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Career's information</legend>
+
+            <label for="career-options">Which career would you like to register in?</label>
+
+            <select name="careers" id="careers" required>
+                <option value="" disabled selected>Jobs to be done</option>
+                <option value="cloud-native">Cloud Native</option>
+                <option value="frontend">Front end</option>
+                <option value="backend">Back end</option>
+                <option value="fundamentals">Fundamentals</option>
+                <option value="python">Python</option>
+                <option value="digital-marketing">Digital Marketing</option>
+                <option value="data-analyst">Data analyst</option>
+                <option value="scrum-master">Scrum Master</option>
+            </select>
+
+            <label for="modality">Work modality</label>
+            <select name="modality" id="modality" required>
+                <option value="" disabled selected>Please select</option>
+                <option value="remote">Remote</option>
+                <option value="on-site">On site</option>
+            </select>
+
+            <label for="currently-working">Are you currently working?</label>
+            <select name="currently-working" id="currently-working">
+                <option value="" disabled selected>Please select</option>
+                <option value="yes">Yes</option>
+                <option value="not">Not</option>
+            </select>
+
+            <div class="button-section">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
