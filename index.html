@@ -30,11 +30,33 @@
             <label for="user-address">Address</label>
             <input placeholder="address" name="address" id="user-address" type="text">
 
-            <label for="user-city">City</label>
-            <input placeholder="city" name="city" id="user-city" type="text">
-
             <label for="user-country">Country</label>
-            <input placeholder="country" name="country" id="user-country" required type="text">
+            <select name="country" id="user-country" required>
+                <option value="" disabled selected>--Select a country--</option>
+                <option value="colombia">Colombia</option>
+                <option value="brazil">Brazil</option>
+                <option value="argentina">Argentina</option>
+            </select>
+
+            <label for="user-city">City</label>
+            <select name="city" id="user-city" required>
+                <option value="" disabled selected>--Select a city--</option>
+                <optgroup label="Colombia">
+                    <option value="medellin">Medellin</option>
+                    <option value="bogota">Bogota</option>
+                    <option value="cali">Cali</option>
+                </optgroup>
+                <optgroup label="Brazil">
+                    <option value="são-paulo">São Paulo</option>
+                    <option value="rio-de-janeiro">Rio de Janeiro</option>
+                    <option value="porto-alegre">Porto Alegre</option>
+                </optgroup>
+                <optgroup label="Argentina">
+                    <option value="buenos-aires">Buenos Aires</option>
+                    <option value="cordoba">Cordoba</option>
+                    <option value="rosario">Rosario</option>
+                </optgroup>
+            </select>
 
             <label for="user-phoneNumber">Phone number</label>
             <input placeholder="phone number" name="phone" id="user-phoneNumber" type="number">
@@ -47,10 +69,10 @@
         <fieldset>
             <legend>Career's information</legend>
 
-            <label for="career-options">Which career would you like to register in?</label>
+            <label for="careers">Which career would you like to register in?</label>
 
             <select name="careers" id="careers" required>
-                <option value="" disabled selected>Jobs to be done</option>
+                <option value="" disabled selected>--Jobs to be done--</option>
                 <option value="cloud-native">Cloud Native</option>
                 <option value="frontend">Front end</option>
                 <option value="backend">Back end</option>
@@ -63,14 +85,14 @@
 
             <label for="modality">Work modality</label>
             <select name="modality" id="modality" required>
-                <option value="" disabled selected>Please select</option>
+                <option value="" disabled selected>--Please select--</option>
                 <option value="remote">Remote</option>
                 <option value="on-site">On site</option>
             </select>
 
             <label for="currently-working">Are you currently working?</label>
             <select name="currently-working" id="currently-working">
-                <option value="" disabled selected>Please select</option>
+                <option value="" disabled selected>--Please select--</option>
                 <option value="yes">Yes</option>
                 <option value="not">Not</option>
             </select>

@@ -2,7 +2,6 @@ body {
     background-color: rgb(240, 247, 253);
     display: flex;
     font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
     justify-content: center;
@@ -21,7 +20,7 @@ form {
 
 fieldset {
     align-items: center;
-    background-color: rgb(245, 247, 260);
+    background-color: rgb(245, 247, 255);
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
@@ -52,9 +51,20 @@ input {
     width: 50%;
 }
 
+#user-country {
+    height: 30%;
+    width: 53%;
+}
+
+#user-city {
+    height: 30%;
+    width: 53%;
+}
+
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
+    appearance: none;
     margin: 0;
 }
 
