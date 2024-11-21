@@ -51,12 +51,12 @@ input {
     width: 50%;
 }
 
-#user-country {
+.user-country {
     height: 30%;
     width: 53%;
 }
 
-#user-city {
+.user-city {
     height: 30%;
     width: 53%;
 }
